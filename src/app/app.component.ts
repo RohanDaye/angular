@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { SharedService } from './shared.service';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,7 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'my-angular-app';
+  pageTitle$ = this.sharedService.pageTitle$;
+
+  constructor(private sharedService: SharedService) {}
 }

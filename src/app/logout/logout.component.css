@@ -1,0 +1,26 @@
+.logout-container {
+    text-align: center;
+    margin-top: 20vh; /* Adjust the top margin to center the content vertically */
+  }
+  
+  .logout-text {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #333; /* Adjust the color */
+  }
+  
+  .logout-button {
+    padding: 10px 20px;
+    font-size: 18px;
+    background-color: #e74c3c; /* Adjust the background color */
+    color: #fff; /* Adjust the text color */
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  .logout-button:hover {
+    background-color: #c0392b; /* Adjust the background color on hover */
+  }
+  

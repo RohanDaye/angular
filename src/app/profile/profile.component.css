@@ -1,0 +1,39 @@
+.profile-content {
+    text-align: justify;
+    line-height: 1.6;
+    margin-top: 20px; /* Adjust the top margin */
+    text-align: center;
+  }
+  
+  .profile-photo {
+    width: 150px; /* Adjust the width of the profile photo */
+    height: 150px; /* Adjust the height of the profile photo */
+    border-radius: 50%; /* Make the photo circular */
+    margin-bottom: 20px; /* Adjust the bottom margin */
+  }
+  
+  h2 {
+    font-size: 28px;
+    color: #3498db; /* Adjust the color */
+    text-decoration: underline;
+    margin-bottom: 15px; /* Adjust the bottom margin */
+  }
+  
+  p {
+    font-size: 18px;
+    color: #333;
+    margin-bottom: 20px; /* Adjust the bottom margin */
+  }
+  
+  p::first-letter {
+    font-size: 32px;
+    color: #e74c3c; /* Adjust the color for the first letter */
+    margin-right: 5px;
+    font-weight: bold;
+  }
+  
+  p:hover {
+    background-color: #ecf0f1; /* Add background color on hover */
+    transition: background-color 0.3s;
+  }
+  

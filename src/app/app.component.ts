@@ -1,3 +1,5 @@
+// app.component.ts
+
 import { Component } from '@angular/core';
 import { SharedService } from './shared.service';
 
@@ -8,6 +10,11 @@ import { SharedService } from './shared.service';
 })
 export class AppComponent {
   pageTitle$ = this.sharedService.pageTitle$;
+  showSidebar = false;
 
   constructor(private sharedService: SharedService) {}
+
+  toggleSidebar(): void {
+    this.showSidebar = !this.showSidebar;
+  }
 }

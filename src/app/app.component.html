@@ -1,8 +1,9 @@
-<div class="header">
+<!-- app.component.html -->
+
+<!-- <div class="header">
   <h1>{{ pageTitle$ | async }}</h1>
-</div>
-
-
+  <button class="sidebar-button" (click)="toggleSidebar()">☰</button>
+</div> -->
 
 <div class="container">
   <div class="navbar">
@@ -17,15 +18,24 @@
       <li><i class="fas fa-user-graduate"></i> <a routerLink="/student">Student</a></li>
       <li><i class="fas fa-users"></i> <a routerLink="/staff">Staff</a></li>
     </ul>
- 
+
     <div class="bottom-links">
       <div><i class="fas fa-user"></i> <a routerLink="/profile">Profile</a></div>
       <div><i class="fas fa-sign-out-alt"></i> <a routerLink="/logout">Logout</a></div>
     </div>
   </div>
-  
-
+ 
   <div class="content">
+    <div class="header">
+      <h1>{{ pageTitle$ | async }}</h1>
+      <button class="sidebar-button" (click)="toggleSidebar()">☰</button>
+      
+    </div>
     <router-outlet></router-outlet>
   </div>
 </div>
+<div class="sidebar" [class.show]="showSidebar">
+  <!-- Sidebar content goes here -->
+  <p>Sidebar Content</p>
+</div>
+

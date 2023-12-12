@@ -9,6 +9,7 @@ import { StudentComponent } from './student/student.component';
 import { StaffComponent } from './staff/staff.component';
 import { ProfileComponent } from './profile/profile.component';
 import { LogoutComponent } from './logout/logout.component';
+import { SidebarComponent } from './sidebar/sidebar.component';
 
 const routes: Routes = [
   { path: 'home', component: HomeComponent },
@@ -29,6 +30,7 @@ const routes: Routes = [
     StaffComponent,
     ProfileComponent,
     LogoutComponent,
+    SidebarComponent,
   ],
   imports: [
     BrowserModule,
